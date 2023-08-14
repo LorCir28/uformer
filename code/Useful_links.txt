@@ -1,0 +1,2 @@
+- Pytorch PSNR: https://torchmetrics.readthedocs.io/en/stable/image/peak_signal_noise_ratio.html
+- Pytorch SSIM: https://torchmetrics.readthedocs.io/en/stable/image/structural_similarity.html
