@@ -51,3 +51,4 @@ The only errors that may occour are relative to wrong/mispelled paths.
 
 The first cell of _Global_, the one relating to the connection to Google Drive, must only be executed if the notebook is run on Google Colab.
  
+**ATTENTION: There may be some problems displaying mathematical formulas when opening the notebook on GitLab. Therefore, it is recommended to download the repository**
