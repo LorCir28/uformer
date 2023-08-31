@@ -19,7 +19,7 @@ The evaluation measures on which the performance of the denoising process is eva
 
 In conclusion, our project aims to repurpose the working Uformer architecture for the denoising task, without constraints on achieving the same evaluation metrics as the state-of-the-art.
 
-![Uformer Architecture](https://d3i71xaburhd42.cloudfront.net/2835951fabf12804e17d5a525b2be2bee70e7910/3-Figure2-1.png "Uformer Architecture")
+![Uformer Architecture](./img/architecture.png "Uformer Architecture")
 
 
 # Preliminaries
