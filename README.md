@@ -57,8 +57,8 @@ Downloading the full/light dataset is the most important step to fully test the 
 - Place all three elements in the repository folder related to the downloaded dataset type. It is recommended that you delete all files in these folders before making the transition
 
 - Open the _Uformer_ notepad, go to the _Global_ section and perform:
-    - If you downloaded the **full_dataset**: Change _use_full_dataset_ to **True** and enter the dataset path in _full_dataset_root_. 
-    - If you downloaded the **lightweight dataset**: Change _use_full_dataset_ to **False** and enter the dataset path to _dataset_root_ 
+    - If you downloaded the **full_dataset**: Change _use_full_dataset_ to **True**
+    - If you downloaded the **lightweight dataset**: Change _use_full_dataset_ to **False**
 
 By performing this procedure, you can run the tests with a suitable dataset. The project will weigh **12GB** if you downloaded the full dataset, or **6GB** with the lightweight one.
 
