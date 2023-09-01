@@ -1,10 +1,10 @@
-<h1 align="center">NN project: Schiavella (1884561), Cirillo (1895955)</h1>
+# NN project: Schiavella (1884561), Cirillo (1895955)
 
 # Uformer
 ### _A General U-Shaped Transformer for Image Restoration_
 
 
-This notebook presents the architecture and application of the Uformer neural network, presented in. It consists of a Transformer-based encoder-decoder structure. The innovations introduced in this architecture are:
+This notebook presents the architecture and application of the Uformer neural network. It consists of a Transformer-based encoder-decoder structure. The innovations introduced in this architecture are:
 
 - A nonoverlapping window-based self-attention instead of global self-attention
 - A learnable multi-scale restoration modulator in the form of a multi-scale spatial bias to adjust features in multiple layers
@@ -40,16 +40,16 @@ This is to allow the user to test the whole notebook, but he has to keep in mind
 
 Moreover, there is a directory "_Try_SSID_dataset_" that is used in the notebook to show some samples during the composition of the dataset.
 
-Considering all this files, the project has a size of almost 3GB of memory. The project can reach up to 12GB if the complete SSID dataset is downloaded.
+Considering all these files, the project has a size of almost 3GB of memory. The project can reach up to 12GB if the complete SSID dataset is downloaded.
  
 # Dependencies
 All the packages required for the project are automatically installed when the notebook is run.
 
 # Run test
-All the necessary things, other than dataset and paths, are already present in the notebook.
+All the necessary things, other than the dataset and paths, are already present in the notebook.
 
-Test the program is very easy: it is required to run sequentially all the cells of the notebook. 
-The only errors that may occour are relative to wrong/mispelled paths.
+Testing the program is very easy: it is required to run sequentially all the cells of the notebook. 
+The only errors that may occur are relative to wrong/misspelled paths.
 
 The first cell of _Global_, the one relating to the connection to Google Drive, must only be executed if the notebook is run on Google Colab.
  
