@@ -67,6 +67,10 @@ All the necessary elements, other than the dataset and paths, are already presen
 Testing the program is very easy: it is required to run sequentially all the cells of the notebook. 
 The only errors that may occur are relative to wrong/misspelled paths.
 
+Errors similar to the latter can occur in the _Test_ section, when loading pretrained models. To solve them, simply add ".zip" to the path name in the notebook cell.
+
+With Windows operating systems, the _num_worker_ parameter related to Pytorch dataloaders may cause some problems. To avoid this, set this value to 0.
+
 The first cell of the _Global_ section, the one relating to the connection to Google Drive, must only be executed if the notebook is run on Google Colab.
  
 **ATTENTION: There may be some problems displaying mathematical formulas when opening the notebook on GitLab. Therefore, it is recommended to download the repository**
