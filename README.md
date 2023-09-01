@@ -1,8 +1,10 @@
+# NN project: Schiavella (1884561), Cirillo (1895955)
+
 # Uformer
 ### _A General U-Shaped Transformer for Image Restoration_
 
 
-This notebook presents the architecture and application of the Uformer neural network, presented in. It consists of a Transformer-based encoder-decoder structure. The innovations introduced in this architecture are:
+This notebook presents the architecture and application of the Uformer neural network. It consists of a Transformer-based encoder-decoder structure. The innovations introduced in this architecture are:
 
 - A nonoverlapping window-based self-attention instead of global self-attention
 - A learnable multi-scale restoration modulator in the form of a multi-scale spatial bias to adjust features in multiple layers
@@ -19,35 +21,52 @@ The evaluation measures on which the performance of the denoising process is eva
 
 In conclusion, our project aims to repurpose the working Uformer architecture for the denoising task, without constraints on achieving the same evaluation metrics as the state-of-the-art.
 
-![Uformer Architecture](https://d3i71xaburhd42.cloudfront.net/2835951fabf12804e17d5a525b2be2bee70e7910/3-Figure2-1.png "Uformer Architecture")
+![Uformer Architecture](./img/architecture.png "Uformer Architecture")
 
+# General structure
 
-# Preliminaries
-All the project is embedded in the notebook _Uformer_, in the directory _code_. Some important steps, before running the program, are the following:
+The project repository is organized as follows:
+- _code_: contains the _Uformer_ notebook and functional folders
+	- _mod, no_mod_: directories in which the results of the project will be placed.
 
-- Download the SSID dataset from [SSID_dataset](https://www.eecs.yorku.ca/~kamel/sidd/)
-- Place the downloaded dataset in the directory _dataset_
-- Rename its directory with "_Full_SSID_dataset_" if you downloaded the full one, or "_SSID_dataset_". 
-- Open the notebook and **modify the path in section _Global_ to access the dataset**.
+- _datasets_: groups the various versions of the SSID_ dataset.
+    - _Full_SSID_dataset_: the most complete version of the dataset
+    - _SSID_dataset_: the lightest version of the dataset
+    - _Try_SSID_dataset_: contains only a few samples for testing the views of the dataset samples
 
+**ATTENTION: The above dataset directories do NOT contain all the samples for the actual dataset. This is so that the user can more easily download the repository and test the entire notebook. Aware of this, the user must keep in mind that the results may not be good without the full/light dataset.**
 
-# Datasets
-The above dataset directories are already present but not with all the samples concerning the real datasets. 
+- _img_: some significant images of the Uformer architecture
 
-This is to allow the user to test the whole notebook, but he has to keep in mind that the results may not be good without the full/half dataset.
+- _papers_: some important articles for the project
 
-Moreover, there is a directory "_Try_SSID_dataset_" that is used in the notebook to show some samples during the composition of the dataset.
+Considering all these files, the project has a size of almost **3 GB**.
 
-Considering all this files, the project has a size of almost 3GB of memory. The project can reach up to 12GB if the complete SSID dataset is downloaded.
- 
-# Dependencies
-All the packages required for the project are automatically installed when the notebook is run.
+# Full test preliminaries
+
+All packages needed for the project are automatically installed when the notebook is started.
+
+Downloading the full/light dataset is the most important step to fully test the project. To do this, just follow the following steps:
+
+- Download the SSID dataset from [SSID_dataset](https://www.eecs.yorku.ca/~kamel/sidd/), following the instructions on the site. The downloaded directory should contain 3 items:
+     - A _Data_ directory containing the samples.
+     - Two text files _ReadMe_sRGB_ and _Scene_Instances_.
+
+- Place all three elements in the repository folder related to the downloaded dataset type. It is recommended that you delete all files in these folders before making the transition
+
+- Open the _Uformer_ notepad, go to the _Global_ section and perform:
+    - If you downloaded the **full_dataset**: Change _use_full_dataset_ to **True** and enter the dataset path in _full_dataset_root_. 
+    - If you downloaded the **lightweight dataset**: Change _use_full_dataset_ to **False** and enter the dataset path to _dataset_root_ 
+
+By performing this procedure, you can run the tests with a suitable dataset. The project will weigh **12GB** if you downloaded the full dataset, or **6GB** with the lightweight one.
 
 # Run test
-All the necessary things, other than dataset and paths, are already present in the notebook.
 
-Test the program is very easy: it is required to run sequentially all the cells of the notebook. 
-The only errors that may occour are relative to wrong/mispelled paths.
+All the necessary elements, other than the dataset and paths, are already present in the notebook.
 
-The first cell of _Global_, the one relating to the connection to Google Drive, must only be executed if the notebook is run on Google Colab.
+Testing the program is very easy: it is required to run sequentially all the cells of the notebook. 
+The only errors that may occur are relative to wrong/misspelled paths.
+
+The first cell of the _Global_ section, the one relating to the connection to Google Drive, must only be executed if the notebook is run on Google Colab.
  
+**ATTENTION: There may be some problems displaying mathematical formulas when opening the notebook on GitLab. Therefore, it is recommended to download the repository**
