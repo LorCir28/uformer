@@ -29,7 +29,7 @@ The project repository is organized as follows:
 - _code_: contains the _Uformer_ notebook and functional folders
 	- _mod, no_mod_: directories in which the results of the project are. The latter are already present about the train and the experiments carried out by us. Consequently, tests can be run with these files, without having to train the network again.
 
-** ATTENTION: Running a complete network train will overwrite files already present in _mod_ and _no_mod_**.
+**ATTENTION: Running a complete network train will overwrite files already present in _mod_ and _no_mod_**.
 
 - _datasets_: groups the various versions of the SSID_ dataset.
     - _Full_SSID_dataset_: the most complete version of the dataset
