@@ -27,7 +27,7 @@ In conclusion, our project aims to repurpose the working Uformer architecture fo
 
 The project repository is organized as follows:
 - _code_: contains the _Uformer_ notebook and functional folders
-	- _mod, no_mod_: directories in which the results of the project will be placed.
+	- _mod, no_mod_: directories in which the results of the project are
 
 - _datasets_: groups the various versions of the SSID_ dataset.
     - _Full_SSID_dataset_: the most complete version of the dataset
